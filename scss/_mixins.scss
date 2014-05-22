@@ -1,0 +1,23 @@
+/*MIXINS*/
+@mixin black($color,$value) {
+	color: rgba(black,$value)
+}
+
+%where_am_i {
+	background: green;
+}
+
+@mixin complement($primary_color){
+	color: complement($primary_color);
+}
+
+@mixin complement_background($primary_color){
+	background-color: complement($primary_color);
+}
+
+@mixin border_radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}

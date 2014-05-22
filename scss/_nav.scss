@@ -1,0 +1,51 @@
+@import "_variables.scss";
+@import "_mixins.scss";
+
+#nav {
+	position: relative;
+	margin-left: 25%;
+	font-size: $link_text;
+	font-family: $reg_font;
+	@extend %where_am_i;
+
+	li {
+		float:left;
+		display: inline-block;
+		margin-right: 2%;
+		background-color: white;
+	
+	}
+	
+	a {
+		@include black(black,0.5);
+		text-decoration: none;
+
+	}
+}
+
+
+@media all and (max-width: 400px) {
+	
+		#nav {
+			position: relative;
+			margin-left: 0%;
+			font-size: $link_text;
+			font-family: $reg_font;
+			
+
+					li {
+						float:left;
+						display: inline-block;
+						background-color: white;
+						
+
+					
+					}
+					
+					a {
+						@include black(black,0.5);
+						text-decoration: none;
+
+					}
+		}
+	}

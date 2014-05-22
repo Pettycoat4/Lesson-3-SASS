@@ -1,0 +1,146 @@
+/*MIXINS*/
+/* line 6, ../scss/_mixins.scss */
+#nav {
+  background: green;
+}
+
+/* line 4, ../scss/_nav.scss */
+#nav {
+  position: relative;
+  margin-left: 25%;
+  font-size: 2em;
+  font-family: Verdana, san serif;
+}
+/* line 11, ../scss/_nav.scss */
+#nav li {
+  float: left;
+  display: inline-block;
+  margin-right: 2%;
+  background-color: white;
+}
+/* line 19, ../scss/_nav.scss */
+#nav a {
+  color: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+}
+
+@media all and (max-width: 400px) {
+  /* line 29, ../scss/_nav.scss */
+  #nav {
+    position: relative;
+    margin-left: 0%;
+    font-size: 2em;
+    font-family: Verdana, san serif;
+  }
+  /* line 36, ../scss/_nav.scss */
+  #nav li {
+    float: left;
+    display: inline-block;
+    background-color: white;
+  }
+  /* line 45, ../scss/_nav.scss */
+  #nav a {
+    color: rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+  }
+}
+/*MIXINS*/
+/* line 6, ../scss/_mixins.scss */
+#nav {
+  background: green;
+}
+
+/*VARIABLES*/
+/*GLOBALS*/
+/* line 16, ../scss/main.scss */
+h1 {
+  color: #e68f13;
+  font-family: Verdana, san serif;
+}
+
+/* line 21, ../scss/main.scss */
+p {
+  color: #136ae6;
+  font-family: Verdana, san serif;
+  text-align: justify;
+}
+
+/* line 28, ../scss/main.scss */
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+/* line 32, ../scss/main.scss */
+.column {
+  max-width: 27%;
+  position: relative;
+  float: left;
+  padding: 2%;
+  margin: 1%,2.5%;
+}
+
+/* line 43, ../scss/main.scss */
+.container, .box {
+  margin: 0, auto;
+}
+
+/* line 49, ../scss/main.scss */
+.box {
+  clear: both;
+}
+
+/* line 54, ../scss/main.scss */
+#header {
+  background-image: url(../img/header.jpg);
+  background-repeat: no-repeat;
+  /*  border: 2px solid black;*/
+  height: 350px;
+  margin-top: 50px;
+  display: block;
+}
+
+/* line 64, ../scss/main.scss */
+.btn {
+  width: 150px;
+  height: 40px;
+  background-color: #136ae6;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  border-radius: 15px;
+  text-align: center;
+  font-weight: bold;
+  font-family: Verdana, san serif;
+  color: white;
+  padding-top: 13px;
+  text-shadow: 2px 2px 0px #e68f13;
+}
+/* line 75, ../scss/main.scss */
+.btn:hover {
+  background: #e68f13;
+  color: #136ae6;
+}
+
+/*
+MEDIA QUERIES*/
+@media all and (max-width: 800px) {
+  /* line 87, ../scss/main.scss */
+  .column {
+    max-width: 75%;
+    position: relative;
+    display: block;
+    padding: 25px;
+    margin: 25px, 25px;
+  }
+}
+@media all and (max-width: 500px) {
+  /* line 102, ../scss/main.scss */
+  .column {
+    max-width: 100%;
+    position: relative;
+    display: block;
+    padding: 50px;
+    margin: 10px, 20px;
+  }
+}

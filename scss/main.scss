@@ -1,0 +1,114 @@
+@import "_variables.scss";
+@import "_nav.scss";
+@import "_mixins.scss";
+
+
+
+/*VARIABLES*/
+$link_color: red;
+$primary_color:#e68f13;
+$reg_font: Verdana, san serif; 
+$link_text: 2em;
+
+
+
+/*GLOBALS*/
+h1 {
+  color:$primary_color;
+  font-family: $reg_font;
+}
+
+p {
+  @include complement($primary_color);
+  font-family: $reg_font;
+  text-align: justify;
+}
+
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.column{
+  max-width:27%;
+  position: relative;
+  float:left;
+  padding: 2%;
+  margin:1%,2.5%;
+
+}
+
+
+
+.container {
+	margin: 0, auto;
+}
+
+
+
+.box {
+	clear:both;
+	@extend .container;
+}
+
+#header {
+	background-image: url(../img/header.jpg);
+	background-repeat: no-repeat;
+/*  border: 2px solid black;*/
+  height:350px;
+  margin-top: 50px;
+  display: block;
+  
+}
+
+.btn {
+  width: 150px;
+  height: 40px;
+  @include complement_background($primary_color);
+  @include border_radius(15px);
+  text-align: center;
+  font-weight: bold;
+  font-family: $reg_font;
+  color:white;
+  padding-top: 13px;
+  text-shadow:2px 2px 0px $primary_color;
+      &:hover {
+        background:$primary_color;
+        @include complement($primary_color);
+      }
+
+}
+
+
+/*
+MEDIA QUERIES*/
+@media all and (max-width: 800px) {
+
+      .column {
+      max-width:75%;
+      position: relative;
+      display: block;
+      padding: 25px;
+      margin:25px, 25px;
+
+      }
+}
+
+
+
+
+@media all and (max-width: 500px) {
+
+      .column {
+      max-width:100%;
+      position: relative;
+      display: block;
+      padding: 50px;
+      margin:10px, 20px;
+
+      }
+}
+
+
+
+
